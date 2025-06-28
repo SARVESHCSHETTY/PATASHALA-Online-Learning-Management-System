@@ -1,0 +1,69 @@
+#LMS Commands
+1-npm create vite@latest
+2-npm Install
+3-npm install -D tailwindcss@latest postcss@latest autoprefixer@latest
+4-npm install -D tailwindcss@3.4.1 postcss autoprefixer
+5-npx tailwindcss init -p
+6-npx shadcn@latest init
+7-npm run dev
+
+
+#Login& sign up 
+#design
+1-npx shadcn@latest add tabs
+2-npx shadcn@latest add card
+3-npx shadcn@latest add label
+4-npx shadcn@latest add input
+5-npx shadcn@latest add dropdown-menu
+6-npx shadcn@latest add avatar
+7-npx shadcn@latest add sheet
+
+#course
+1-npx shadcn@latest add skeleton
+2-npx shadcn@latest add badge
+
+#add course
+1-npx shadcn@latest add table
+2-npx shadcn@latest add select
+
+#edit course
+1-npm i react-quill
+1- npm install react-quill@1.3.5 --force
+2- npm install react-quill@2.0.0-beta.2 --legacy-peer-deps
+
+
+
+#Profile
+1-npm install @radix-ui/react-dialog
+
+#Update Profile 
+1-npm i multinary -for Uploading  iamges 
+2-npm install cloudinary
+
+
+#course DEatils
+1-npx shadcn@latest add separator
+2- npm install react-player
+
+
+#API
+1-npm install @reduxjs/toolkit
+2-npm install react-redux
+
+
+
+#server/backend:
+npm -y init ->for json file
+npm 
+
+
+#Filter
+npx shadcn@latest add checkbox
+
+#Dashboard
+npm i recharts
+# forgot
+1-npm install bcrypt
+
+cirtificate
+1- npm install html2canvas jspdf
