@@ -12,6 +12,7 @@ import authRoutes from './routes/auth.route.js';
 import dotenv from 'dotenv';
 import superadminRoutes from './routes/superadmin.routes.js';
 dotenv.config();
+import path from 'path';
 
 
 
@@ -19,6 +20,8 @@ dotenv.config();
 connectDB();
 const app = express();
 const PORT = process.env.PORT || 3000;
+
+const __dirname = path.resolve();
 
 app.use(cors({
     origin: 'http://localhost:5173',
@@ -37,6 +40,11 @@ app.use("/api/v1/purchase", purchaseRoute);
 app.use("/api/v1/progress", courseProgressRoute);
 app.use('/api/v1/auth', authRoutes);
 app.use('/api/v1/superadmin', superadminRoutes);
+
+app.use(express.static(path.join(__dirname, '/client/dist')));
+app.get(/^\/(?!api).*/, (_, res) => {
+    res.sendFile(path.resolve(__dirname, 'client', 'dist', 'index.html'));
+});
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

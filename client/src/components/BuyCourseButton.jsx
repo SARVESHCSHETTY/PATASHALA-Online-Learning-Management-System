@@ -112,4 +112,4 @@ const BuyCourseButton = ({ courseId }) => {
   );
 };
 
-export default BuyCourseButton; // ✅ EXPORT properly at the end
+export default BuyCourseButton; 

@@ -176,6 +176,7 @@ const CourseProgress = () => {
     if (!question.trim()) return;
     await askLectureQuestion({ courseId, lectureId: currentLectureId, question });
     setQuestion("");
+    refetchQuestions();
   };
   const handleReply = async (questionId) => {
     if (!reply.trim()) return;
