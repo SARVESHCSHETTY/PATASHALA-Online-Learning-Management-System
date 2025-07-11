@@ -1,7 +1,7 @@
 // 1. Updated RTK Query Setup (purchaseApi.js)
 import { createApi, fetchBaseQuery } from "@reduxjs/toolkit/query/react";
 
-const COURSE_PURCHASE_API = "http://localhost:8080/api/v1/purchase";
+const COURSE_PURCHASE_API = "https://patashala-online-learning-management.onrender.com/api/v1/purchase";
 
 export const purchaseApi = createApi({
   reducerPath: "purchaseApi",
